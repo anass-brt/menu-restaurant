@@ -1,0 +1,37 @@
+
+
+
+<div (window:resize)="onResize($event)">
+    <div class="pb-5 content-slider">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="" *ngFor="let item of DataCategory;let i = index">
+    
+            <div class="carousel-item"   [ngClass]="{'active': i == 0}"> 
+                <div class="card-category position-relative" style="background-image: url({{item.img}});">  
+                    <div class="bg-opacity position-absolute"></div>              
+                  <div class="text-center position-absolute top-50 start-50 translate-middle category-name">{{item.categroy}} </div>    
+                </div>
+      
+           
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+         <span><i class="bi bi-chevron-left icon-slider"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span><i class="bi bi-chevron-right icon-slider"></i></span>
+        </button>
+      </div>
+    </div>
+    
+    
+    </div>
+

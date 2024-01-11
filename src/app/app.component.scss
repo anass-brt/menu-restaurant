@@ -1,0 +1,126 @@
+*{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+}
+
+.content-menu{
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .name-menu{
+        padding-top: 100px ;
+        color: #feba02;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Lemon', serif;
+    }
+
+    .icon-social{
+        font-size: 30px;
+        font-weight: bold;
+        color:#feba02;
+    }
+
+    .menu-title{
+        color: #feba02;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Lemon', serif;
+        text-decoration: underline;
+    }
+    .Categorie-menu{
+        color: #feba02;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Lemon', serif;
+        margin: 15px 0;
+    }
+}
+
+.navbar-content{
+
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    .bg-light{
+        //background-color:transparent !important ;
+           
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-brand{
+        color:#feba02 !important;
+        }
+        .navbar-nav{
+            .nav-link{
+                color: #feba02;
+                margin:5px 15px 5px 0;
+                border-radius: 5px;
+                text-align: center;
+                padding: 5px;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Lemon', serif;
+                
+            }
+            .nav-link:hover{
+                color:#feba02;     
+                border: 1px solid #feba02;         
+            }
+        
+        } 
+        .navbar-collapse{
+        flex-grow: 0 !important;
+        }
+        
+        .navbar-toggler{
+         border: #feba02 solid 1px !important;
+         color:#feba02 !important;
+         font-size: 15px !important;
+        }
+}
+
+
+
+.body-content{
+    width: 100%;
+    background: #ffffff;
+.skills-content{
+    .type-competences{
+        cursor: pointer; color: yellow;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .type-competences:hover{
+     
+        color: #a19920;
+    }
+}
+}
+
+.title-grand{
+    color:rgb(0, 0, 0);font-size: 50px;font-weight: bold;font-style: italic;
+}
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+
+    .navbar-content{
+        .navbar-nav{
+            .nav-link{      
+                width: 100%;
+            }
+        
+        } 
+    }
+    .title-grand{
+        font-size: 40px;
+    }
+
+}

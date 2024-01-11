@@ -1,0 +1,29 @@
+<div class=" bg-produit position-relative">
+
+    <div class="opcity-bg w-100 h-100 position-absolute"></div>
+    <div class="p-2 position-relative">
+        <!-- align-items-center -->
+        <div class="d-flex">
+            <div class="parent-image-card">
+            <img class="image-card" src="{{data.img}}">
+          
+            </div>
+            <div class="info-produit mx-3">
+    
+                <div class="bg-image-title text-center" style=" background-image: url('assets/images/Brush-bg.png');"> 
+                    {{data.name}}
+                </div>
+                <div class="description-produit">Lorem ipsum, dolor sit amet consectetur</div>
+                <div class="price-produit">{{data.price}} DH</div>
+              
+                <div *ngIf="data.valueStar<=3&&data.valueStar>1" class="stars-produit">★☆☆☆☆</div>
+                <div *ngIf="data.valueStar<=6&&data.valueStar>3" class="stars-produit">★★☆☆☆</div>
+                <div *ngIf="data.valueStar<=8&&data.valueStar>6" class="stars-produit">★★★☆☆</div>
+                <div *ngIf="data.valueStar<=10&&data.valueStar>8" class="stars-produit">★★★★★</div>
+    
+            </div>
+        </div>
+    </div>
+
+
+</div>

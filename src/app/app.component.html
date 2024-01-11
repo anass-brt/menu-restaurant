@@ -1,0 +1,117 @@
+<div class="content-menu" style="background-image: url('assets/images/background.jpg');">
+  <div class="navbar-content">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('assets/images/background.jpg') !important; ">
+      <div class="container-fluid mx-1">
+        <!-- <a class="navbar-brand " (click)="onClick('header')">Menu Restaurant</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse m-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" (click)="onClick('Boissons')">Boissons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="onClick('Desserts')" >Desserts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  tabindex="-1" aria-disabled="true" (click)="onClick('Nourriture')">Nourriture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  tabindex="-1" aria-disabled="true" (click)="onClick('Entrees')">Entrees</a>
+            </li>
+            
+            <!-- <li class="nav-item">
+              <a class="nav-link"  tabindex="-1" aria-disabled="true" (click)="onClick('formation')">Formation</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  </div>
+
+  <div class="name-menu text-center">Menu Restaurant</div>
+
+  <div class="text-center">
+    <!-- <a class="mx-2 icon-social" href="http://linkedin.com/in/anass-bourouti-220b18292" target="_blank"><i class="bi bi-linkedin "></i></a> -->
+    <!-- href="https://wa.me/212642328998" -->
+    <a  class="mx-2 icon-social" target="_blank"><i class="bi bi-whatsapp"></i></a>       
+    <!-- href="https://www.facebook.com/100005985049311" -->
+    <a  target="_blank" class="mx-2 icon-social"><i class="bi bi-facebook"></i></a>
+    <!-- href="https://www.instagram.com/anass.brt/" -->
+    <a  class="mx-2 icon-social" target="_blank"><i class="bi bi-instagram"></i></a>
+  </div>
+
+  <div>
+    <div class="Categorie-menu text-center my-5">Categorie</div>
+    <app-category [DataCategory]="DataCategory"></app-category>
+  </div>
+
+  <div class="menu-title text-center mb-3">Menu</div>
+
+  <div id="Boissons">
+    <div class="Categorie-menu text-center mb-3">Boissons</div>
+
+    <div class="m-auto row">
+
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 my-3" *ngFor="let item of DataBoissons">
+      
+         <app-card-produit [data]="item"></app-card-produit>
+    
+      </div>
+     </div>
+
+  </div>
+
+  <div id="Desserts">
+    <div class="Categorie-menu text-center mb-3">Desserts</div>
+
+    <div class="m-auto row">
+
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 my-3" *ngFor="let item of DataDesserts">
+      
+         <app-card-produit [data]="item"></app-card-produit>
+    
+      </div>
+     </div>
+
+  </div>
+
+  <div id="Nourriture">
+    <div class="Categorie-menu text-center mb-3">Nourriture</div>
+
+    <div class="m-auto row">
+
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 my-3" *ngFor="let item of DataNourriture">
+      
+         <app-card-produit [data]="item"></app-card-produit>
+    
+      </div>
+     </div>
+
+  </div>
+  
+  <div id="Entrees">
+    <div class="Categorie-menu text-center mb-3">Entrees</div>
+
+    <div class="m-auto row">
+
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 my-3" *ngFor="let item of DataEntrees">
+      
+         <app-card-produit [data]="item"></app-card-produit>
+    
+      </div>
+     </div>
+
+  </div>
+
+  
+  
+  
+
+  
+
+</div>
+
